@@ -1,34 +1,45 @@
 .form-container{
-  background-color: #7f858f;
-  display: flex;
+  background: #c4c6ce;
   
-  margin-top: 200px;
-  margin-left: 70vh;
-  margin-right: 70px;
+  
+  margin-top: 10px;
+  margin-left:100vh;
+  margin-right: 60px;
 
-  position: relative;
-  right: 10vh;
+  width: 20rem;
+  flex-direction: column;
+  
+  height: 57vh;
+  border-radius: 1rem;
 
-  height: 60vh;
+  position: fixed;
+  right: 7rem;
 }
 
 .form-itens{
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 
   position: relative;
 
-  top: 5vh;
-  left: 50vh;
+  
+  left: 4vh;
+  bottom: 5rem;
+  top: 2rem;
 }
 
 label{
   margin-top: 2vh;
+  color: white;
 }
 
 input{
-  padding: 5px 50px;
+  
+  display: flex;
+  width: 16rem;
+  height: 1.7rem;
+  padding: 1rem;
   border-radius: 10px;
   outline: none;
   box-shadow: none;
@@ -40,19 +51,73 @@ a{
   flex-direction: column;
   position: relative;
 
-  top: 50vh;
-  right: 12vh;
+  top: 4.8rem;
+  left: 1.5rem ;
 
   background: red;
-  height: 40px;
+  padding-bottom: 1.4rem;
   width: 40vh;
   text-align: center;
   text-decoration: none;
   border-radius: 30px;
 }
+a:hover{
+  background: rgb(197, 5, 5);
+  transition: 500ms;
+}
 
-p{
+.content-text{
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
   position: relative;
-  top: 2vh;
+  top: 4rem;
+}
+
+.text-p{
+  position: relative;
+  top: 1.5vh;
   color: white;
 }
+
+.text-titulo-h1{
+  font-size: 30px;
+  position: relative;
+  top: 5rem;
+  left: 10rem;
+  display: flex;
+  color: #000;
+}
+
+.text-subtitulo-p{
+  position: relative;
+  top: 6rem;
+  left: 10rem;
+  color: #000;
+}
+
+.text-h3{
+  font-size: 2rem ;
+  position: relative;
+  top: 10rem;
+  left: 10rem;
+  color: rgb(63, 47, 47);
+}
+
+
+  @media(max-width:1185px){
+    .form-container{
+      max-width: 953px;
+      height: 50rem;
+    }
+
+    a{
+      display: flex;
+      position: relative;
+      top: 4rem;
+      margin-right: 64rem;
+
+    }
+
+  }
